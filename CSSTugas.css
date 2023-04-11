@@ -1,0 +1,123 @@
+body{
+  font: 1em/150% Arial, Helvetica, sans-serif;
+  background: url(3.jpg);
+}
+#pagewrap{
+  padding: 5px;
+  width: 960px;
+  margin: 20px auto;
+}
+#header{
+  height: 100px;
+}
+#content{
+  width: 600px;
+  float: left;
+  border-radius: 5px;
+  padding: 10px;
+}
+#sidebar{
+  width: 300px;
+  float: right;
+  border-radius: 5px;
+  padding: 10px;
+}
+#flickr {
+  width: 200px;
+  float: right;
+  background: #f0efef;
+  border-radius: 5px;
+  padding: 10px;
+}
+#flickr img {
+  margin-bottom: 5px;
+  width: 60px;
+
+}
+#header, #content, #sidebar, #flickr{
+  margin-bottom: 5px;
+}
+#content, #sidebar, #flickr{
+  background: white;
+}
+.navbar {
+  background: linear-gradient(to right, grey, white);
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px;
+}
+ul {
+  align-items: center;
+}
+li{
+  display: inline;
+  margin-right: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 10px;
+}
+input[type="text"] {
+  height: 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
+/*----------------------------------------------------------------*/
+
+@media screen and (max-width: 980px){
+  #pagewrap{
+    width: 94%;
+  }
+  #content{
+    width: 65%;
+  }
+  #sidebar{
+    width: 30%;
+  }
+  #flickr{
+    width: 30%;
+  }
+}
+@media screen and (max-width: 700px){
+  #content{
+    width: auto;
+    float: none;
+  }
+  #sidebar{
+    width: auto;
+    float: none;
+  }
+  #flickr{
+    width: auto;
+    float: none;
+  }
+}
+@media screen and (max-width: 480px){
+  #header{
+    height: auto;
+  }
+  h1{
+    font-size: 24px;
+  }
+  #sidebar{
+    display: none;
+  }
+  #flickr{
+    width: auto;
+    float: none;
+  }
+}
